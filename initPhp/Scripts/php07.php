@@ -3,7 +3,7 @@
 </head> 
 <body> 
 <?php 
-    $connexion  =  mysqli_connect("localhost","root","","empScePhp"); if  (Sconnexion) 
+    $connexion  =  mysqli_connect("localhost","root","","empsce");
     //  connexion  réussie
     if($connexion) {
         mysqli_set_charset  ($connexion,"utf8"); 
@@ -11,11 +11,11 @@
         $resultat=  mysqli_query($connexion, $requete); 
         $ligne=mysqli_fetch_assoc($resultat); 
         while($ligne) {
-            echo  $ligne["matricule"];echo ",  "; 
-            echo  $ligne["nom"];echo ",  "; 
-            echo  $ligne["prenom"];  echo ", ";
-            echo  $ligne["cadre"];echo ",  ";
-            echo  $ligne["service"]; echo "<br />";
+            echo  $ligne["Emp_nss"];echo ",  "; 
+            echo  $ligne["Emp_nom"];echo ",  "; 
+            echo  $ligne["Emp_pnom"];  echo ", ";
+            echo  $ligne["Emp_qualif"];echo ",  ";
+            echo  $ligne["Emp_sce"]; echo "<br />";
             $ligne=mysqli_fetch_assoc($resultat);
             }
         }
