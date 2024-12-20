@@ -1,6 +1,6 @@
 <?php 
     function cnx() {
-        $connexion = mysqli_connect("localhost", "lafleur", "secret", "baselafleur1");
+        $connexion = mysqli_connect("localhost", "root", "", "baselafleur1");
         return $connexion;
     };
     function getTitre($idCateg) {
@@ -17,5 +17,11 @@
             mysqli_close($connexion);
         }
         return $titre;
+    }
+    function test($attr) {
+        $idCateg = $attr['idCateg']; 
+        if(!defined($idCateg)) 
+            return getTitre($idCateg);
+        return "Erreur";
     }
 ?>

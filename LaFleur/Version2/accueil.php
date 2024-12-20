@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-    <title><?php include_once('utils.php'); $idCateg = $_GET['idCateg']; echo getTitre($idCateg); ?></title>
+    <title>Société Lafleur - Accueil</title>
     <meta name="description" content="Accueil LaFLEUR" >
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
     <meta http-equiv="Content-Language" content="fr" >

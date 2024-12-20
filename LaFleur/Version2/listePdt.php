@@ -1,7 +1,8 @@
+<?php include_once('utils.php');?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-    <title></title>
+    <title><?php echo test($_GET); ?></title>
     <meta name="description" content="Script pour avoir la liste des produits par catégorie" >
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
     <meta http-equiv="Content-Language" content="fr" >
